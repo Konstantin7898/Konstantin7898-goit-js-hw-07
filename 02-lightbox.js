@@ -12,17 +12,8 @@ const imgEl = galleryItems
 galleryArray.insertAdjacentHTML("beforeend", imgEl);
 console.log(galleryItems);
 
-galleryArray.addEventListener("click", onGalleryArrayClick);
-
-function onGalleryArrayClick(e) {
-  e.preventDefault();
-  if (!e.target.nodeName == "IMG") {
-    return;
-  }
-
-  const lightbox = new SimpleLightbox(".gallery a", {
-    captions: true,
-    captionsData: "alt",
-    captionDelay: 250,
-  });
-}
+const lightbox = new SimpleLightbox(".gallery a", {
+  captions: true,
+  captionsData: "alt",
+  captionDelay: 250,
+});
