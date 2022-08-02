@@ -13,7 +13,7 @@ galleryArray.insertAdjacentHTML("beforeend", imgEl);
 console.log(galleryItems);
 
 function onClick(e) {
-  if (e.target.nodeName !== BUTTON) return;
+  if (e.target.nodeName !== "IMG") return;
 }
 
 const lightbox = new SimpleLightbox(".gallery a", {
