@@ -12,6 +12,12 @@ const imgEl = galleryItems
 galleryArray.insertAdjacentHTML("beforeend", imgEl);
 console.log(galleryItems);
 
+
+function(e){
+  if(e.target.nodeName !== BUTTON)
+  return
+  }
+
 const lightbox = new SimpleLightbox(".gallery a", {
   captions: true,
   captionsData: "alt",
