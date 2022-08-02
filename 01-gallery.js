@@ -22,7 +22,7 @@ galleryArray.addEventListener("click", onGalleryArrayClick);
 
 function onGalleryArrayClick(e) {
   e.preventDefault();
-  if (!e.target.nodeName == "IMG") {
+  if (e.target.nodeName !== "IMG") {
     return;
   }
 
